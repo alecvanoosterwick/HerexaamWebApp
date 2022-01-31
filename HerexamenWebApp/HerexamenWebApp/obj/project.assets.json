@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alec\\Desktop\\HerexamenWebApp\\HerexamenWebApp\\HerexamenWebApp.csproj",
+      "projectUniqueName": "C:\\Users\\Alec\\HerexaamWebApp\\HerexamenWebApp\\HerexamenWebApp\\HerexamenWebApp.csproj",
       "projectName": "HerexamenWebApp",
-      "projectPath": "C:\\Users\\Alec\\Desktop\\HerexamenWebApp\\HerexamenWebApp\\HerexamenWebApp.csproj",
+      "projectPath": "C:\\Users\\Alec\\HerexaamWebApp\\HerexamenWebApp\\HerexamenWebApp\\HerexamenWebApp.csproj",
       "packagesPath": "C:\\Users\\Alec\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alec\\Desktop\\HerexamenWebApp\\HerexamenWebApp\\obj\\",
+      "outputPath": "C:\\Users\\Alec\\HerexaamWebApp\\HerexamenWebApp\\HerexamenWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alec\\AppData\\Roaming\\NuGet\\NuGet.Config",
