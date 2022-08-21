@@ -1,0 +1,31 @@
+﻿@model IEnumerable<WebShop.Models.Product>
+
+@{    
+    ViewData["Title"] = "Index";
+}
+
+<h1>Shop Pagina</h1>
+<p>
+    <a asp-action="Create">Create New Listing</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Naam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Slijtage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Float)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prijs)
+            </th>
+        </tr>
+    </thead>
+</table>

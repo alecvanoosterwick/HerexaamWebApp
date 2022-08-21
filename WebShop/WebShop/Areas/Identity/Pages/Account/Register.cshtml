@@ -1,0 +1,78 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Areas/Identity/Pages/_AuthLayout.cshtml";
+}
+
+<form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Input.VoorNaam"></label>
+                <input asp-for="Input.VoorNaam" class="form-control" />
+                <span asp-validation-for="Input.VoorNaam" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Input.AchterNaam"></label>
+            <input asp-for="Input.AchterNaam" class="form-control" />
+            <span asp-validation-for="Input.AchterNaam" class="text-danger"></span>
+        </div>
+    </div>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Input.Email"></label>
+        <input asp-for="Input.Email" class="form-control" />
+        <span asp-validation-for="Input.Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Input.TelefoonNummer"></label>
+        <input asp-for="Input.TelefoonNummer" class="form-control" />
+        <span asp-validation-for="Input.TelefoonNummer" class="text-danger"></span>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="Input.Adres"></label>
+                <input asp-for="Input.Adres" class="form-control" />
+                <span asp-validation-for="Input.Adres" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="Input.Land"></label>
+                <input asp-for="Input.Land" class="form-control" />
+                <span asp-validation-for="Input.Land" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="Input.PostCode"></label>
+                <input asp-for="Input.PostCode" class="form-control" />
+                <span asp-validation-for="Input.PostCode" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Input.Password"></label>
+                <input asp-for="Input.Password" class="form-control" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Input.ConfirmPassword"></label>
+                <input asp-for="Input.ConfirmPassword" class="form-control" />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
